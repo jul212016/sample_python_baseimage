@@ -1,8 +1,10 @@
 language: python
 #build_image: shippableimages/ubuntu1204_python
 
+
 python:
   - 3.3
+  - 3.4
 
 build:
  ci:
