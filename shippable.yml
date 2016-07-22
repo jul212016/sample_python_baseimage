@@ -52,47 +52,4 @@ integrations:
       on_success: always
       on_failure: always
       
-    - integrationName: ship-slack1
-      type: slack
-      recipients: 
-        - "#hitchcock1-public"
-        - pvt-channel
-      
-      on_start: always
-      on_pull_request: always
-      on_success: always
-      on_failure: always
- 
-    - integrationName: irc
-      type: irc
-      recipients: 
-        - "chat.freenode.net#test-cock"
-        - "chat.freenode.net#hitchcok2-irc"
-      
-      on_start: always
-      on_pull_request: always
-      on_success: always
-      on_failure: always
-      
-    - integrationName: ship-hipchat1
-      type: hipchat
-      recipients: 
-      #  - "#pvt-room"
-       # - "@shiphitchcock2"
-      #  - "#pub-room"
-        - "#Zurtr"
-      
-      on_start: always
-      on_pull_request: always
-      on_success: always
-      on_failure: always
-     
-    - integrationName: test-wh-fail1
-      type: webhook
-      payload:
-        - title= test - $REPO_FULL_NAME - $BUILD_NUMBER - 
-        - body=Shippable Run $BUILD_NUMBER ($BUILD_URL) successs for $COMPARE_URL testing for $COMMITTER and $LAST_AUTHOR and $COMMIT_MESSAGE 
-      
-      on_success: always
-      on_start: always
-      on_failure: always
+    
